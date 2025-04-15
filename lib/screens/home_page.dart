@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'wallet_page.dart';
@@ -11,6 +13,7 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
@@ -205,6 +208,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 return Container(
                   padding: EdgeInsets.all(12),
                   decoration: BoxDecoration(
+                    // ignore: duplicate_ignore
+                    // ignore: deprecated_member_use
                     color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -352,12 +357,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             onPressed: () {
               // Implement daily reward claim logic
             },
-            child: Text("Claim Reward"),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orangeAccent,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             ),
+            child: Text("Claim Reward"),
           ),
         ],
       ),
@@ -443,8 +448,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         FloatingActionButton(
           backgroundColor: color.withOpacity(0.2),
           elevation: 0,
-          child: Icon(icon, color: color, size: 30),
           onPressed: onTap,
+          child: Icon(icon, color: color, size: 30),
         ),
         SizedBox(height: 8),
         Text(

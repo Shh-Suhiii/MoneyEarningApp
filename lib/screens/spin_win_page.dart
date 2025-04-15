@@ -1,8 +1,12 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 
 class SpinWinPage extends StatefulWidget {
+  const SpinWinPage({super.key});
+
   @override
   _SpinWinPageState createState() => _SpinWinPageState();
 }

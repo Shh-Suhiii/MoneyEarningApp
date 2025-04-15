@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter/services.dart';
@@ -16,6 +18,8 @@ class ReferralPage extends StatelessWidget {
     {"name": "Alice Smith", "referrals": 95, "rank": 2},
     {"name": "Michael Lee", "referrals": 80, "rank": 3},
   ];
+
+  ReferralPage({super.key});
 
   @override
   Widget build(BuildContext context) {

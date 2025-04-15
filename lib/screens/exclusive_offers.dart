@@ -69,13 +69,13 @@ Widget buildExclusiveOffers() {
                     onPressed: () {
                       // Implement claim functionality
                     },
-                    child: Text("Claim Now", style: TextStyle(fontSize: 12)),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orangeAccent,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     ),
+                    child: Text("Claim Now", style: TextStyle(fontSize: 12)),
                   ),
                 ],
               ),

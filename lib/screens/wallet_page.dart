@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import 'withdraw_page.dart';
@@ -5,6 +7,8 @@ import 'withdraw_page.dart';
 import '../widgets/transaction_tile.dart';
 
 class WalletPage extends StatefulWidget {
+  const WalletPage({super.key});
+
   @override
   _WalletPageState createState() => _WalletPageState();
 }

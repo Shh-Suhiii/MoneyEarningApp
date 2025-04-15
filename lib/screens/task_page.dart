@@ -1,7 +1,11 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:earnmoney/theme/app_colors.dart';
 
 class TaskPage extends StatefulWidget {
+  const TaskPage({super.key});
+
   @override
   _TaskPageState createState() => _TaskPageState();
 }

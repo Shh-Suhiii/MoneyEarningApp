@@ -5,7 +5,7 @@ class TransactionTile extends StatelessWidget {
   final String amount;
   final String date;
 
-  TransactionTile({required this.title, required this.amount, required this.date});
+  const TransactionTile({super.key, required this.title, required this.amount, required this.date});
 
   @override
   Widget build(BuildContext context) {

@@ -1,10 +1,15 @@
+// ignore_for_file: unnecessary_import, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'dart:async';
 
 class AdsPage extends StatefulWidget {
+  const AdsPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _AdsPageState createState() => _AdsPageState();
 }
 
@@ -71,6 +76,7 @@ class _AdsPageState extends State<AdsPage> with SingleTickerProviderStateMixin {
             int countdown = int.parse(
               adOffers[index]['duration'].split(' ')[0],
             );
+            // ignore: unused_local_variable
             Timer? timer;
 
             void startTimer() {
@@ -162,6 +168,8 @@ class _AdsPageState extends State<AdsPage> with SingleTickerProviderStateMixin {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
+                  // ignore: duplicate_ignore
+                  // ignore: deprecated_member_use
                   Color(0xFFffffff).withOpacity(0.2),
                   Color(0xFFFFFFFF).withOpacity(0.1),
                 ],
